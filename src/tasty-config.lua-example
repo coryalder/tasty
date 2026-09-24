@@ -1,0 +1,23 @@
+-- this file is where you customize your setup.
+-- it will not be overridden by updates, tho stuff might get added
+
+-- Set programs that you use
+Tasty = {
+    terminal = "alacritty",
+    fileManager = "nautilus",
+    mainMod = "SUPER",
+    browser = "firefox --new-window"
+}
+
+require("appearance") -- basic look and feel stuff, animation timings
+require("autostart") -- start the apropriate helper apps on launch (noctalia, )
+require("bindings-fns")
+require("bindings") -- keyboard commands and shortcuts
+require("clipboard") -- copy and paste using SUPER+C and SUPER+V, even in the terminal
+require("environment") -- set environment variables
+require("input") -- keyboard and mouse config
+require("misc") -- doens't fit anywhere else
+require("monitors") -- monitor/display config
+-- require("permissions") -- disabled by default 
+require("workspaces") -- some basic workspace / window customizations.
+
