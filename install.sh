@@ -44,7 +44,9 @@ if [ -e "$DEST_CONFIG" ]; then
     read -r -p "$DEST_CONFIG already exists. Overwrite it? [y/N] " ans
     case "$ans" in
         [Yy]*) cp "$CONFIG_INIT" "$DEST_CONFIG"; echo "overwrote $DEST_CONFIG" ;;
-        *)     echo "leaving existing $DEST_CONFIG in place" ;;
+        *)
+            echo "leaving existing $DEST_CONFIG in place"
+            echo "please manually add the contents of $CONFIG_INIT to $DEST_CONFIG" ;;
     esac
 else
     cp "$CONFIG_INIT" "$DEST_CONFIG"
