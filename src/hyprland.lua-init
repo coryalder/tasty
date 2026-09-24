@@ -1,0 +1,23 @@
+-- this file is where you customize your setup.
+-- it will not be overridden by updates, tho stuff might get added
+
+-- Set some defaults that you use
+Tasty = {
+    terminal = "alacritty",
+    fileManager = "nautilus",
+    browser = "firefox --new-window",
+    mainMod = "SUPER",
+}
+
+require("tasty-components/appearance") -- basic look and feel stuff, animation timings
+require("tasty-components/autostart") -- start the apropriate helper apps on launch (noctalia, )
+require("tasty-components/bindings-fns")
+require("tasty-components/bindings") -- keyboard commands and shortcuts
+require("tasty-components/clipboard") -- copy and paste using SUPER+C and SUPER+V, even in the terminal
+require("tasty-components/environment") -- set environment variables
+require("tasty-components/input") -- keyboard and mouse config
+require("tasty-components/misc") -- doens't fit anywhere else
+require("tasty-components/monitors") -- monitor/display config
+-- require("tasty-components/permissions") -- disabled by default 
+require("tasty-components/workspaces") -- some basic workspace / window customizations.
+

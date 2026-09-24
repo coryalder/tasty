@@ -57,7 +57,7 @@ hl.bind(Tasty.mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen",
 -- Screenshot a monitor
 hl.bind("PRINT", hl.dsp.exec_cmd(Tasty.ipc .. "screenshot-fullscreen pick"))
 -- Screenshot a region
-hl.bind(Tasty.mainMod .. " +  PRINT", hl.dsp.exec_cmd(ipc .. "screenshot-region"))
+hl.bind(Tasty.mainMod .. " +  PRINT", hl.dsp.exec_cmd(Tasty.ipc .. "screenshot-region"))
 
 -- Example special workspace (scratchpad)
 hl.bind(Tasty.mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
